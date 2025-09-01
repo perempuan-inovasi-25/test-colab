@@ -1,0 +1,11 @@
+.footer {
+    align-self: stretch;
+    padding: 0 200px;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+}
