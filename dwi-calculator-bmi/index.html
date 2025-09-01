@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /*styling all page*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 14px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+#container {
+    width: 530px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/*styling title*/
+.bmi-title {
+  margin-bottom: 30px;
+}
+
+.bmi-title h1 {
+  margin-bottom: 20px;
+}
+
+.bmi-title p {
+  text-align: left;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/*styling input element*/
+.input-group {
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+input[type="text"] {
+  width: 95%;
+  padding: 9px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+  margin-top: 10px;
+}
+
+input::placeholder { 
+  opacity: 0.5; 
+}
+
+/*styling button element*/
+.btn-container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+button {
+  background-color:#5C6BC0;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 30px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+/*styling result*/
+#result {
+  text-align: left;
+  font-size: medium;
+}
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="bmi-title">
+            <h1>Check your BMI</h1>
+            <p>Enter your weight and height below to check your BMI results</p>
+        </div>
+
+        <!--User input Weight-->
+        <div class="input-group">
+            <p>Put your weight in here (KG)</p>
+            <input type="text" id="weight" placeholder="60"/>
+        </div> 
+
+        <!--User input Height-->
+        <div class="input-group">
+            <p>And your height in here (CM)</p>
+            <input type="text" id="height" placeholder="167" />
+        </div>
+
+        <!--Button submit-->
+        <div class="btn-container">
+            <button id="btn">Calculate BMI</button>
+        </div>
+
+        <!--BMI Result Display-->
+        <div id="result"></div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
